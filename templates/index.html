@@ -1,35 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vim Practice</title>
-    <!-- CodeMirror CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.10/codemirror.min.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            text-align: center;
-        }
-        #editor {
-            border: 1px solid #ccc;
-            height: 400px;
-            width: 80%;
-            margin: auto;
-        }
-    </style>
+    <title>Vim Curriculum</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
 </head>
-<body>
-    <h1>Vim Practice</h1>
-    <textarea id="editor"></textarea>
-    <!-- CodeMirror JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.10/codemirror.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.10/keymap/vim.min.js"></script>
-    <script>
-        const editor = CodeMirror.fromTextArea(document.getElementById('editor'), {
-            lineNumbers: true,
-            keyMap: 'vim', // Enable Vim mode
-            mode: 'text/plain',
-            theme: 'default'
-        });
-    </script>
+<body class="index-page">
+    <div class="container">
+        <h1>Welcome to Vim Curriculum</h1>
+        <p>Master the art of Vim one chapter at a time!</p>
+        <ul class="chapter-list">
+            <li><a href="/chapter01">01 Basic Navigation</a></li>
+            <li><a href="/chapter02">02 Moving Faster 1</a></li>
+            <li><a href="/chapter03">03 Moving Faster 2</a></li>
+        </ul>
+    </div>
 </body>
+</html>
