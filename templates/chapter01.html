@@ -1,35 +1,32 @@
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vim Practice</title>
-    <!-- CodeMirror CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.10/codemirror.min.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            text-align: center;
-        }
-        #editor {
-            border: 1px solid #ccc;
-            height: 400px;
-            width: 80%;
-            margin: auto;
-        }
-    </style>
-</head>
-<body>
-    <h1>Vim Practice</h1>
-    <textarea id="editor"></textarea>
-    <!-- CodeMirror JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.10/codemirror.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.10/keymap/vim.min.js"></script>
-    <script>
-        const editor = CodeMirror.fromTextArea(document.getElementById('editor'), {
-            lineNumbers: true,
-            keyMap: 'vim', // Enable Vim mode
-            mode: 'text/plain',
-            theme: 'default'
-        });
-    </script>
-</body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter 01: Basic Navigation</title>
+    <link rel="stylesheet" href="../static/css/styles.css" />
+  </head>
+  <body class="chapter1-page">
+    <!-- Include the fixed header -->
+    {% include 'header.html' %}
+
+    <!-- Main Content -->
+    <div class="container">
+      <h1>Chapter 1: Basic Navigation</h1>
+      <p>Learn the basics of navigating in Vim.</p>
+      <h2>Moving the Cursor</h2>
+      <ul>
+        <li><strong>h</strong> - Move left</li>
+        <li><strong>j</strong> - Move down</li>
+        <li><strong>k</strong> - Move up</li>
+        <li><strong>l</strong> - Move right</li>
+      </ul>
+      <h2>Practice</h2>
+      <p>Try moving the cursor around in the editor below:</p>
+      <div id="editor"></div>
+    </div>
+
+    <!-- Link to JavaScript -->
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+  </body>
+</html>

@@ -18,7 +18,7 @@ def chapter02():
     return render_template("chapter02.html")
 
 
-@app.route("/chapter03")
+@app.route("/chapter3")
 def chapter03():
     return render_template("chapter03.html")
 

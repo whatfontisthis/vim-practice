@@ -1,20 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vim Curriculum</title>
-    <link rel="stylesheet" href="/static/css/styles.css">
-</head>
-<body class="index-page">
-    <div class="container">
-        <h1>Welcome to Vim Curriculum</h1>
-        <p>Master the art of Vim one chapter at a time!</p>
-        <ul class="chapter-list">
-            <li><a href="/chapter01">01 Basic Navigation</a></li>
-            <li><a href="/chapter02">02 Moving Faster 1</a></li>
-            <li><a href="/chapter03">03 Moving Faster 2</a></li>
-        </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vim Home</title>
+    <link rel="stylesheet" href="../static/css/styles.css" />
+  </head>
+
+  <body>
+    <!-- Fixed header -->
+    <div class="fixed-header">
+      <h1>Vim Curriculum</h1>
     </div>
-</body>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <h1>Going Vim</h1>
+      <p>Master the art of Vim one chapter at a time!</p>
+      <p>
+        Start with <a href="{{ url_for('chapter01') }}">Basic Navigation</a> to
+        learn the fundamentals.
+      </p>
+    </div>
+
+    <!-- Link to JavaScript -->
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+  </body>
 </html>
