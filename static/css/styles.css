@@ -14,7 +14,7 @@ body {
   left: 0;
   width: 100%;
   background-color: #000000;
-  color: white;
+  color: black;
   z-index: 1000;
   height: 40px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -24,30 +24,29 @@ body {
 }
 
 .fixed-header h1 {
-  font-size: 1rem;
+  font-size: 1.6rem;
   margin: 0;
-  color: red; /* Keep this if you want the red color */
-  line-height: 1; /* Adjust line height to match container height */
+  color: white; /* Keep this if you want the red color */
 }
 
 /*========= Main Content =========*/
 .main-content {
-  margin-top: 300px; /* Offset for the top panel */
-  max-width: 800px;
-  padding: 20px;
-  background-color: #fff;
+  /* margin-top: 50px; Offset for the top panel */
+  max-width: 100%;
+  padding: 10px;
+  background-color: #d9d9d9;
   border-radius: 0 0 10px 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  flex-grow: 1;
-  /* Center the container */
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* Center vertically */
-  align-items: left; /* Center horizontally */
   margin-left: auto;
   margin-right: auto;
 }
 
+.main-content h1 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-top: 30px;
+}
+
+/*========= Standard =========*/
 h1 {
   font-size: 4.5rem;
   color: #2c3e50;
@@ -72,47 +71,10 @@ ul {
   margin-bottom: 30px;
 }
 
-/* CodeMirror Editor */
+/*======= CodeMirror Editor =======*/
 #editor {
   border: 1px solid #ccc;
   height: 400px;
   width: 100%;
   margin: auto;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .side-panel {
-    width: 200px;
-  }
-
-  .container {
-    margin-left: 220px;
-  }
-}
-
-@media (max-width: 600px) {
-  .side-panel {
-    width: 100%;
-    height: auto;
-    position: static;
-    box-shadow: none;
-  }
-
-  .container {
-    margin-left: 0;
-    padding: 10px;
-  }
-
-  h1 {
-    font-size: 2rem;
-  }
-
-  h2 {
-    font-size: 1.5rem;
-  }
-
-  p {
-    font-size: 1rem;
-  }
 }
